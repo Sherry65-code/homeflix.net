@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap');
+*{
+    font-family: 'Rubik', sans-serif;
+}
+body{
+    background-image: url('./back.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    text-align: center;
+}
+h1{
+    color: aliceblue;
+}
+input{
+    background-color: rgb(20, 20, 20);
+    border: none;
+    padding: 10px 25px;
+    font-size: larger;
+    font-weight: 600;
+    color: rgba(240, 248, 255, 0.808);
+    outline: none;
+}
+input:hover{
+    transition-duration: 0.2s;
+    outline: 4px rgba(255, 255, 255, 0.336) solid;
+}
+#load{
+    background-color: rgba(240, 248, 255, 0);
+    border-left: 5px yellow solid;
+    border-right: 5px yellow solid;
+    border-bottom: 5px yellow solid;
+    border-top: 5px rgba(255, 255, 255, 0) solid;
+    position: absolute;
+    padding: 20px 20px;
+    border-radius: 50%;
+    animation: 0.8s infinite load;
+    animation-timing-function: cubic-bezier(1,1,1,1);
+    visibility: hidden;
+    left: 46.5%;
+    top: 46.5%;
+}
+@keyframes load {
+    100%{transform: rotate(360deg);}
+}
+::selection{
+    background-color: rgba(255, 255, 0, 0.486);
+}
+/* Test */
+
+/* Test */
+
+.header{
+    background-color: rgba(255, 255, 0, 0.856);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+}
+.container{
+    position: absolute;
+    left: 0;
+    top: 40px;
+    background-color: rgba(0, 0, 0, 0);
+    bottom: 0;
+    padding-block-start: 20px;
+    text-align: center;
+    right: 0;
+    padding-inline-start: 10px;
+    padding-inline-end: 10px;
+}
+.poster{
+    width: 100%;
+    border-radius: 4px;
+}
+.poster:hover{
+    filter: brightness(0.95);
+    transition-duration: 0.2s;
+}
+.copy{
+    background-color: yellow;
+    border-radius: 4px;
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    bottom: 10px;
+}
+#main{
+    visibility: hidden;
+}
